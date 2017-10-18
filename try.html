@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Resizable - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  
+  <style>
+i{
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+</style>
+
+
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+
+  $( function() {
+    $('.win').resizable().draggable();
+  } );
+
+  </script>
+</head>
+<body>
+
+
+Left arrow: 
+<div class="row">
+  <i class="col-sm-3 left"></i>
+      <div class="col-sm-3" style="border:1px solid; width:50px"></div> 
+  <i class="col-sm-3 arrow right"></i>
+</div>
+
+<div id="resizable" class="win" style="height:10px;">win
+  <div id="hand">drag here</div>
+  <div style="border: 1px solid;"></div>
+</div>
+ 
+ 
+</body>
+</html>

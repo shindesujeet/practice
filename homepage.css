@@ -1,0 +1,80 @@
+body{
+	background-image: url("images/b2.jpg");
+	background-size: cover;
+	height:100%;
+	width:100%;
+}
+
+#main{
+	 border: 1px solid skyblue;
+}
+
+
+img{ 
+	    height:94%;
+	    width:100%;
+}
+#drag{
+	text-align: center;
+}
+
+#bar1{
+
+	border:1px solid skyblue;
+	color:aliceblue;
+	position:fixed;
+}
+
+#line{
+	border:1px solid skyblue;	
+}
+
+#arrow{
+	border: 1px solid darkgreen;
+	position: relative;
+	transform: rotate(-45deg);
+}
+
+#bar21{
+	
+	color:aliceblue;
+	position:fixed;
+	resize: both;
+    overflow: auto;
+	
+}
+
+.row12{
+	    position: fixed;   
+}
+.row1{
+	color:white;
+	    text-align: center;
+}
+#rowid{
+	resize:both;overflow:auto;min-height:34px;min-width:140px;
+}
+#part1{
+	float:left;
+}
+#part2{
+	border: 1px solid skyblue;width:98.5%;margin-top: 13px;
+}
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-left: 20px solid skyblue;
+  border-bottom: 15px solid transparent;
+  float: right;
+      margin-top: -16px;
+  
+}
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-right: 20px solid skyblue;
+  border-bottom: 15px solid transparent;
+}
