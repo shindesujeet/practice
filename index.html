@@ -22,13 +22,13 @@
 </head>
 
 <body ng-app="myApp">
-	<nav class="navbar navbar-default" style="border: 1px solid skyblue;">
+	<nav id="flip" class="navbar navbar-default" style="border: 1px solid skyblue;">
  		 <div class="row">  
 			<div class="navbar navbar-brand"><a href="#" style="color:aliceblue;"><h1>Activity</h1></a></div> 
 	  	 </div>
 	</nav>
 
-    <div class="row">
+    <div id="panel" class="row">
             <div class="col-sm-3" style="margin-left:25px;">     
             </div>
         
@@ -39,7 +39,8 @@
                         <input my-upload type="file" name="upload" style="color: aliceblue;">
                     </form>  
                     <div  id="container"><button id="mybtn">Add Labels</button></div>
-                    <div  id="container2"><button id="mybtn2"><- ArrowS -></button></div>
+                    <div  id="container2"><button id="mybtn2"><-ArrowS-></button></div>
+                    <div  id="container3"><button id="mybtn3">Vertical ArrowS</button></div>
                 </div>
             </div>
     </div>

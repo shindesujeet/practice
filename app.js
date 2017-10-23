@@ -1,4 +1,9 @@
 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#main").slideToggle("slow");
+    });
+});
 
 $(document).ready(function(){
     $('#mybtn').click(function(){
@@ -11,6 +16,12 @@ $(document).ready(function(){
         $(".row12").draggable({handle:".row1"});
     });
    
+
+   $('#mybtn3').click(function(){
+        $('#container3').append("<div class=row112><div class=row11><button style=margin-left:15px onclick=function1(this)>X</button></div><div id=rowid><div class=triangle-left id=part1></div><div id=part2></div><div class=triangle-right id=part3></div></div><div>");
+        $(".row112").draggable({handle:".row11"});
+    });
+
     $(".textbox").on("click", function(e) {
         $(".window").draggable('disable');
         $(this).find(".textbox").focus();
@@ -32,4 +43,8 @@ function funct(elemObj)
 	$(elemObj).parent().parent().remove();
 }
 
+function function1(elemObj)
+{
+    $(elemObj).parent().parent().remove();
+}
 
