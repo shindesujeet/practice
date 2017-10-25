@@ -6,7 +6,8 @@ body{
 }
 
 #main{
-	 border: 1px solid skyblue;
+	     border: 7px solid teal;
+    border-style: groove;
 	  display: none;
 }
 
@@ -19,8 +20,9 @@ img{
 	text-align: center;
 }
 
-#bar1{
 
+#bar1{
+	
 	border:1px solid skyblue;
 	color:aliceblue;
 	position:fixed;
@@ -38,47 +40,137 @@ img{
 
 
 .row112{ 
+		height: 100px;
+		width:170px;
       position: fixed;   
       transform: rotate(90deg);
 }
 .row12{
-	    position: fixed;   
+	    position: fixed;  min-height:34px; 
 }
 .row1{
 	color:white;
 	    text-align: center;
 }
 #rowid{
-	resize:both;overflow:auto;
+	resize:both;
+	overflow:auto;
 	min-height:34px;
-	min-width:150px;
+	min-width:170px;
+	max-height:34px;
 }
 #part1{
 	float:left;
 }
 #part2{
-	border: 1px solid skyblue;width:98.5%;margin-top: 13px;
+	border: 1px solid skyblue;   
+	width: 98.4%;
+    margin-top: 9px;
+    margin-left: 2px;
 }
 
 .triangle-right {
   width: 0;
   height: 0;
-  border-top: 15px solid transparent;
-  border-left: 20px solid skyblue;
-  border-bottom: 15px solid transparent;
+  border-top: 10px solid transparent;
+  border-left: 10px solid skyblue;
+  border-bottom: 10px solid transparent;
   float: right;
-      margin-top: -16px;
+  margin-top: -11px;
   
 }
 .triangle-left {
   width: 0;
   height: 0;
-  border-top: 15px solid transparent;
-  border-right: 20px solid skyblue;
-  border-bottom: 15px solid transparent;
+  border-top: 10px solid transparent;
+  border-right: 10px solid skyblue;
+  border-bottom: 10px solid transparent;
 }
 
 .row11{
 		color:white;
 	    text-align: center;
+}
+
+#close{
+	font-size: 7px;
+    padding: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+	
+}
+
+#bar1{
+	min-width: 100px;
+}
+
+.mainROW{
+  width:150px;
+      height:65px;
+      min-width:150px;
+      min-height:65px;
+      position: fixed;  
+      resize:both;
+      position: relative;
+}
+#closeButton{
+    padding: 1px;
+    font-size: 8px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#outerDIV{
+ height:1px;
+ width:1px;
+}
+
+#arrowDIV{
+	overflow:auto;
+  min-height:34px;
+  min-width:132px;
+}
+
+#leftArrow{
+	float:left;
+}
+
+#hztLine{
+	border: 1px solid skyblue ;margin-top: 9px;
+}
+
+.tri-right {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-left: 10px solid skyblue;
+  border-bottom: 10px solid transparent;
+  float: right;
+  margin-top: -11px;  
+}
+
+.tri-left {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 10px solid skyblue;
+  border-bottom: 10px solid transparent;
+}
+.mainROW{
+  width:150px;
+      height:65px;
+      min-width:150px;
+      min-height:65px;
+      position: fixed;  
+      resize:both;
+      position: relative;
+      color: white;
+}
+
+.mainROW1{
+  	  width:150px;
+      height:65px; 
+      resize:both;
+      position: relative;
+      transform: rotate(90deg);
 }

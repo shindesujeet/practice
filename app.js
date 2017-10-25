@@ -7,19 +7,20 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('#mybtn').click(function(){
-        $('#container').append("<div class=window id=bar1><div class=bar><button style=margin-left:10px; onclick=fun(this)>X</button></div><div contentEditable=true class=textbox placeholder=type..></div></div>");
+        $('#container').after("<div class=window id=bar1><button id=close style=float:right; onclick=fun(this)>X</button><div contentEditable=true class=textbox ></div></div>");
         $(".window").draggable();
     });
 
    $('#mybtn2').click(function(){
-        $('#container2').append("<div class=row12><div class=row1><button style=margin-left:15px onclick=funct(this)>X</button></div><div id=rowid><div class=triangle-left id=part1></div><div id=part2></div><div class=triangle-right id=part3></div></div><div>");
-        $(".row12").draggable({handle:".row1"});
+        $('#container2').after("<div id=outerDIV><div class=mainROW><div id=closeButton style=text-align:center;><button onclick=funct(this);>X</button></div><div id=arrowDIV><div class=tri-left id=leftArrow></div><div id=hztLine></div><div class=tri-right></div></div></div></div>");
+        $('#outerDIV').draggable();
+        $('.mainROW').resizable();
     });
-   
 
    $('#mybtn3').click(function(){
-        $('#container3').append("<div class=row112><div class=row11><button style=margin-left:15px onclick=function1(this)>X</button></div><div id=rowid><div class=triangle-left id=part1></div><div id=part2></div><div class=triangle-right id=part3></div></div><div>");
-        $(".row112").draggable({handle:".row11"});
+        $('#container3').after("<div id=outerDIV><div class=mainROW1><div id=closeButton style=text-align:center;><button onclick=funct(this);>X</button></div><div id=arrowDIV><div class=tri-left id=leftArrow></div><div id=hztLine></div><div class=tri-right></div></div></div></div>");
+        $('#outerDIV').draggable();
+        $('.mainROW1').resizable();
     });
 
     $(".textbox").on("click", function(e) {
@@ -35,7 +36,7 @@ $(document).ready(function(){
 
 function fun(elemObj)
 {
-	$(elemObj).parent().parent().remove();
+	$(elemObj).parent().remove();
 }
 
 function funct(elemObj)
@@ -48,3 +49,37 @@ function function1(elemObj)
     $(elemObj).parent().parent().remove();
 }
 
+function removeid(elemobj){
+    $(elemobj).parent().parent().children().first().css("display","none");
+}
+
+function k(obj){
+    $(obj).parent().parent().children().first().css("display","block");
+}
+
+function remov(){
+    $("#pic").remove();
+}
+
+  var countDownDate = new Date("Jan 1, 2018 00:00:01").getTime();
+
+  var x = setInterval(function(){
+ 
+  var now = new Date().getTime();
+  
+  var distance = countDownDate - now;
+  
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+ 
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 
+1000);
