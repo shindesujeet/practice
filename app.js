@@ -12,7 +12,7 @@ $(document).ready(function(){
     });
 
    $('#mybtn2').click(function(){
-        $('#container2').after("<div id=outerDIV><div class=mainROW><div id=closeButton style=text-align:center;><button onclick=funct(this);>X</button></div><div id=arrowDIV><div class=tri-left id=leftArrow></div><div id=hztLine></div><div class=tri-right></div></div></div></div>");
+        $('#container2').after("<div id=outerDIV onmouseenter=fun2(this); onmouseleave=fun3(this);><div class=mainROW><div id=closeButton style=text-align:center;><button id=buton style=display:none; onclick=funct(this);>X</button></div><div id=arrowDIV><div class=tri-left id=leftArrow></div><div id=hztLine></div><div class=tri-right></div></div></div></div>");
         $('#outerDIV').draggable();
         $('.mainROW').resizable();
     });
@@ -54,7 +54,14 @@ function removeid(elemobj){
     $("#mybtn4").text("show image");
 }
 
-
+function fun2(obj2)
+{
+  $(obj2).children().first().children().first().children().css("display","block");
+}
+function fun3(obj3)
+{
+  $(obj3).children().first().children().first().children().css("display","none");
+}
 function remov(){
     $("#pic").remove();
 }
