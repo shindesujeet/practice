@@ -50,12 +50,10 @@ function function1(elemObj)
 }
 
 function removeid(elemobj){
-    $(elemobj).parent().parent().children().first().css("display","none");
+    $(elemobj).parent().parent().children().first().toggle();
+    $("#mybtn4").text("show image");
 }
 
-function k(obj){
-    $(obj).parent().parent().children().first().css("display","block");
-}
 
 function remov(){
     $("#pic").remove();
