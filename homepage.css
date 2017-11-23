@@ -10,6 +10,7 @@ body{
     border-style: groove;
 	  display: none;
     color:red;
+    position: absolute;
 }
 
 
