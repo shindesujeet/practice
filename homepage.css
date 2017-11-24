@@ -36,6 +36,7 @@ img{
 
 #line{
 	border:1px solid skyblue;	
+  position: absolute;
 }
 
 #arrow{
